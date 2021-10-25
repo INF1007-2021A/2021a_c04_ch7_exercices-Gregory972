@@ -4,14 +4,19 @@
 from collections import deque
 
 
-def get_fibonacci_number(TODO):
-	pass
+def get_fibonacci_number(index):
+	return 0 if index == 0 else 1 if index == 1 else get_fibonacci_number(index-1) + get_fibonacci_number(index-2)
 
-def get_fibonacci_sequence(TODO):
-	pass
+def get_fibonacci_sequence(taille):
+	seq = [0, 1]
+	for i in range(2, taille):
+		seq.append(seq[-1] + seq[-2])
+	return [] if taille == 0 else [seq[0]] if taille == 1 else [0, 1] if taille == 2 else seq
 
-def get_sorted_dict_by_decimals(TODO):
-	pass
+def get_sorted_dict_by_decimals(dict):
+	for i in dict:
+
+
 
 def fibonacci_numbers(length):
 	pass
